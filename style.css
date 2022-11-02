@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.w-80 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.col-33 {
+  flex-basis: 33.333%;
+}
+
+.col-50 {
+  flex-basis: 50%;
+}
+
+/* SECTION HEADER NAV MENU*/
+header {
+    background-color: lightgray;
+    margin-bottom: 50px;
+}
+.flex-container-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+text-decoration: underline;
+}
+
+.logo {
+  padding: 10px;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+/* FIRST SECTION -IMAGES AND TEXT */
+
+.c-white {
+  color: white;
+}
+
+.bg-blue {
+  background-color: #9cdaf1;
+}
+
+.bg-green {
+  background-color: #a7c3a7;
+}
+
+.bg-pink {
+  background-color: #ffd5b3;
+}
+
+.first-section h2 {
+  text-align: center;
+  font-size: 35px;
+  padding: 60px 30px;
+  margin-bottom: 0;
+}
+
+p a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+ 
+}
+
+
+/* SECTION RADIUS -50 NUMBERS THIRD SECTION */
+
+.flex-container-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.flex-number {
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    padding: 30px;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 40px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.flex-btn {
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(211, 211, 211);
+    margin-top: 20px;
+}
+.heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.m-20 {
+    margin-left: 30px;
+    margin-right: 5px;
+}
+
+
+/* SECTION DISHES FOURTH SECTION */
+
+.dishes {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.m-40 {
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+
+/* SECTION TESTIMONIALS FIFTH SECTION */
+
+.fifth-section .col-33:not(:last-child) {
+  margin-right: 30px;
+}
+
+.fifth-section .col-33 > h2 {
+  text-align: center;
+}
+
+.fifth-section .testimonials-box .col-50:not(:first-child) {
+  margin-left: 35px;
+}
+
+.fifth-section .img-box {
+  flex-shrink: 0;
+}
+
+.col-50 h3 {
+  padding-bottom:20px;
+}
+
+.link-more {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+ .link-more a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+ .link-more a:hover {
+  text-decoration: underline;
+} 
+
+.date-row .col {
+  align-self: center;
+}
+
+.date-row .col-20 {
+  flex: 0 0 20%;
+  margin-right: 30px;
+  padding: 25px 15px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.date-row:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.date-row .col > *:last-child {
+  margin-bottom: 0;
+}
+
+.menu-box h3 {
+  text-align: center;
+  padding: 10px;
+}
+
+.m-15 {
+  margin-top: 15px;
+}
+
+
+/* FOOTER */
+
+li img {
+    width: 20px;
+    opacity: 0.7;
+}
+
+footer {
+    background-color: rgb(204, 213, 221);
+    margin-top: 50px;
+}
+
+.footer-flex ul{
+    display: flex;
+    justify-content: end;
+}
+
+li img:hover {
+  opacity: 1;
+}
+
+
+
+/* tablet styles */
+@media (max-width: 760px) {
+  .flex-container-header li {
+    display: none;
+  }
+
+  .flex-container-header .logo{
+    flex-basis: 100%;
+  }
+
+  .first-section h2 {
+    font-size: 25px;
+  }
+
+  .second-section.flex-container-2,
+  .fifth-section.flex-container {
+    display: block;
+  }
+
+  .second-section .col-33:not(:last-child),
+  .fifth-section .col-33:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .third-section {
+    display: none;
+  }
+
+  .third-section + .section {
+    padding-top: 0;
+  }
+}
+
+/* mobile styles */
+@media (max-width: 456px) {
+  .first-section.flex-container,
+  .fourth-section .flex-container {
+    display: block;
+  }
+
+  .first-section .col-33:nth-child(2) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
